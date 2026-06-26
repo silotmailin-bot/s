@@ -116,11 +116,6 @@ LRM_INIT_SCRIPT(function()
             return Function
         end)
 
-        if not Success and (not Function or typeof(Function) ~= "function") then
-            game:GetService("Players").LocalPlayer:Kick("Valary.gg | Anti-Cheat was updated! Wait for script update, you can not use it at this moment.")
-            task.wait(9e9)
-        end
-
         debug.setupvalue(Function, 4, 0/0)
 
         task.spawn(function()
